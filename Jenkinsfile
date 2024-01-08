@@ -8,7 +8,7 @@ pipeline {
                 build: {
                     steps {
                         echo 'Building...'
-			sh 'sleep 30'
+			sh 'sleep 40'
                         // Your build steps go here
                     }
                 }
@@ -17,7 +17,7 @@ pipeline {
                 test: {
                     steps {
                         echo 'Testing...'
-                        sh 'sleep 30'
+                        sh 'sleep 40'
 			// Your test steps go here
                     }
                 }
@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-		sh 'sleep 30'
+		sh 'sleep 40'
                 // Your deployment steps go here
             }
         }
